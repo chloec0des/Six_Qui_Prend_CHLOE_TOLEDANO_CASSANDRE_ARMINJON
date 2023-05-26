@@ -4,16 +4,16 @@ import java.util.List;
 public abstract class Joueur {
     private List<Carte> main;
     private List<Carte> pile;
-    private String nom; // Nouvel attribut
+    private String nom;
 
     public Joueur(String nom) {
         this.main = new ArrayList<>();
         this.pile = new ArrayList<>();
-        this.nom = nom; // Initialisation du nouvel attribut
+        this.nom = nom;
     }
 
     public abstract Carte choisirCarte(int index);
-    public String getNom() { // Nouvelle méthode
+    public String getNom() {
         return this.nom;
     }
     public void ajouterCarte(Carte carte) {

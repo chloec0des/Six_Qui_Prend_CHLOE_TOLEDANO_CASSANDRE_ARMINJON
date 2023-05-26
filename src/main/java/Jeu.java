@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Collections;
 
@@ -57,27 +58,40 @@ public class Jeu {
     }
 
     public void jouerTour() {
-        while(!estTermine()) {
-            for (Joueur joueur : players) {
-
-                Carte carteChoisie;
-                if (joueur instanceof JoueurHumain) {
-                    carteChoisie = interfaceUtilisateur.recevoirInputJoueur((JoueurHumain) joueur);
-                } else {
-                    carteChoisie = joueur.jouerCarte();
-                }
-                // Place the card on the table according to the game rules
-                placerCarteSurTable(carteChoisie, joueur);
-                interfaceUtilisateur.afficherJeu(this);
-                if (joueur.aTermine()) {
-                    terminerJeu();
-                    return;
-                }
+        List<Carte> cartesJouees = new ArrayList<>();
+        // Chaque joueur choisit une carte à jouer
+        for (Joueur joueur : players) {
+            Carte carteChoisie;
+            if (joueur instanceof JoueurHumain) {
+                carteChoisie = interfaceUtilisateur.recevoirInputJoueur((JoueurHumain) joueur, this);
+            } else {
+                carteChoisie = joueur.jouerCarte();
+            }
+            cartesJouees.add(carteChoisie);
+        }
+        // Trier les cartes jouées dans l'ordre croissant
+        cartesJouees.sort(Comparator.comparingInt(Carte::getValeur));
+        // Chaque joueur place sa carte sur la table
+        for (Carte carte : cartesJouees) {
+            Joueur joueur = getPlayerWhoPlayedCard(carte);
+            placerCarteSurTable(carte, joueur);
+            interfaceUtilisateur.afficherJeu(this);
+            if (joueur.aTermine()) {
+                terminerJeu();
+                return;
             }
         }
-        terminerJeu();
     }
 
+    // Retourne le joueur qui a joué une carte spécifique
+    private Joueur getPlayerWhoPlayedCard(Carte carte) {
+        for (Joueur joueur : players) {
+            if (joueur.getHand().contains(carte)) {
+                return joueur;
+            }
+        }
+        return null;
+    }
 
     public void terminerJeu() {
         // Calculate scores and declare winner

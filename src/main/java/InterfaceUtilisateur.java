@@ -50,12 +50,23 @@ public class InterfaceUtilisateur {
     }
 
 
-    public Carte recevoirInputJoueur(JoueurHumain joueur) {
-        // Receive user input and return the selected card
+    public Carte recevoirInputJoueur(JoueurHumain joueur, Jeu jeu) {
+        // Affiche l'état actuel du jeu pour ce joueur
+        afficherJeu(jeu);
+        System.out.println("Joueur " + joueur.getNom() + ", c'est à vous de jouer.");
+        System.out.println("Voici votre main :");
+        int cardIndex = 0;
+        for (Carte card : joueur.getHand()) {
+            System.out.print(cardIndex + ": " + card.getValeur() + " ");
+            cardIndex++;
+        }
+        System.out.println();
+
+        // Recevoir l'entrée utilisateur et retourner la carte sélectionnée
         Scanner scanner = new Scanner(System.in);
         int carteIndex = -1;
         while (carteIndex < 0 || carteIndex >= joueur.getHand().size()) {
-            System.out.println("Joueur, veuillez entrer le numéro de la carte à jouer:");
+            System.out.println("Veuillez entrer le numéro de la carte à jouer:");
             try {
                 carteIndex = scanner.nextInt();
             } catch (InputMismatchException e) {

@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4325ac5e-c815-47f3-b574-3d3b1124f62f" name="Changes" comment="DebutJeu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Carte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InterfaceUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InterfaceUtilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Joueur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoueurHumain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JoueurHumain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685057451733</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DebutJeu">
+      <created>1685115296513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685115296513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
