@@ -11,6 +11,8 @@ public class JoueurHumain extends Joueur {
 
     }
 
+    //test
+
     public String getNom() {
         return nom;
     }
