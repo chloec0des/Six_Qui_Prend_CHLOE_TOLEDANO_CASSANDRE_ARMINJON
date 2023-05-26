@@ -21,4 +21,20 @@ public class Serie {
         this.cartes.clear();
         return ramassees;
     }
+    public Carte getDerniereCarte() {
+        // Retourne la dernière carte de la série.
+        // On suppose que les cartes sont stockées dans l'ordre dans une List.
+        return this.cartes.get(this.cartes.size() - 1);
+    }
+
+    public List<Carte> getCartes() {
+        // Retourne la liste de toutes les cartes dans la série.
+        return this.cartes;
+    }
+
+    public void vider() {
+        // Vide la série de ses cartes.
+        this.cartes.clear();
+    }
+
 }

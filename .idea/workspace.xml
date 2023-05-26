@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4325ac5e-c815-47f3-b574-3d3b1124f62f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Carte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InterfaceUtilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Jeu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Joueur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JoueurHumain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Serie.java" afterDir="false" />
+    <list default="true" id="4325ac5e-c815-47f3-b574-3d3b1124f62f" name="Changes" comment="DebutJeu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Carte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Carte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InterfaceUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InterfaceUtilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JoueurHumain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JoueurHumain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +64,18 @@
       <option name="presentableId" value="Default" />
       <updated>1685055800515</updated>
     </task>
+    <task id="LOCAL-00001" summary="DebutJeu">
+      <created>1685057451733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685057451733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DebutJeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="DebutJeu" />
   </component>
 </project>
