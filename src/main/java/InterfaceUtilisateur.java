@@ -83,6 +83,7 @@ public class InterfaceUtilisateur {
         System.out.println("Vous devez ramasser une série. Voici les séries disponibles :");
         for (int i = 0; i < table.size(); i++) {
             Serie serie = table.get(i);
+            //TODO: Affciher cartes dans série au lieu de série
             System.out.println((i + 1) + ". " + serie);
         }
 

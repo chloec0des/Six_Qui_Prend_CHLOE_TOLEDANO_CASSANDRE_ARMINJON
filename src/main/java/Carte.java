@@ -12,6 +12,7 @@ public class Carte {
     }
 
     private int determineTeteDeBoeuf(int valeur) {
+        //TODO: Attribuer bon nombre dez têtes de boeuf
         if (valeur % 10 == 0) {
             return 3;
         } else if (valeur % 10 == 5) {

@@ -2,14 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Joueur {
-    private List<Carte> main;
-    private List<Carte> pile;
-    private String nom;
+    public List<Carte> main;
+    public List<Carte> pile;
+    public String nom;
+    public Carte carteJouee;
 
     public Joueur(String nom) {
         this.main = new ArrayList<>();
         this.pile = new ArrayList<>();
         this.nom = nom;
+        this.carteJouee = null;
     }
 
     public abstract Carte choisirCarte(int index);
@@ -51,5 +53,11 @@ public abstract class Joueur {
         return this.pile;
     }
 
+    public Carte getCarteJouee() {
+        return carteJouee;
+    }
 
+    public void setCarteJouee(Carte carteJouee) {
+        this.carteJouee = carteJouee;
+    }
 }

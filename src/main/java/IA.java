@@ -10,6 +10,11 @@ public class IA extends Joueur {
     }
 
     @Override
+    public Carte choisirCarte(int index) {
+        return null;
+    }
+
+    @Override
     public Carte jouerCarte() {
         switch (niveauDifficulte) {
             case 1:

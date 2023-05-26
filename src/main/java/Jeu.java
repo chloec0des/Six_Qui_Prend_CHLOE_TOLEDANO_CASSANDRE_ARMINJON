@@ -67,6 +67,7 @@ public class Jeu {
             } else {
                 carteChoisie = joueur.jouerCarte();
             }
+            joueur.setCarteJouee(carteChoisie);
             cartesJouees.add(carteChoisie);
         }
         // Trier les cartes jouées dans l'ordre croissant
@@ -86,7 +87,7 @@ public class Jeu {
     // Retourne le joueur qui a joué une carte spécifique
     private Joueur getPlayerWhoPlayedCard(Carte carte) {
         for (Joueur joueur : players) {
-            if (joueur.getHand().contains(carte)) {
+            if (joueur.carteJouee.getValeur() == carte.getValeur()) {
                 return joueur;
             }
         }
@@ -153,7 +154,4 @@ public class Jeu {
         return true;
     }
 
-    public List<Serie> getTable() {
-        return table;
-    }
 }
