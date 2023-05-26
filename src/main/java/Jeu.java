@@ -108,7 +108,7 @@ public class Jeu {
     }
 
     private void placerCarteSurTable(Carte carte, Joueur joueur) {
-        // Find the serie with the smallest difference between its last card and the chosen card
+        // Trouver la série avec la plus petite différence entre sa dernière carte et la carte choisie
         Serie serieCible = null;
         int diffMin = Integer.MAX_VALUE;
         for (Serie serie : table) {
@@ -120,14 +120,14 @@ public class Jeu {
         }
 
         if (serieCible != null && serieCible.getCartes().size() < 5) {
-            // If there is a serie where the card can be placed and it's not full, place the card there
+            // Si une série existe où la carte peut être placée et qu'elle n'est pas complète, placez la carte là-bas.
             serieCible.ajouterCarte(carte);
         } else if (serieCible != null) {
-            // If the serie is full, the player has to collect it
+            // Si la série est pleine, le joueur doit la collecter.
             joueur.ramasserSerie(serieCible.ramasserCartes());
             serieCible.ajouterCarte(carte);
         } else {
-            // If there is no serie where the card can be placed, the player has to collect a serie of their choice
+            //S'il n'y a aucune série où la carte peut être placée, le joueur doit collecter une série de son choix.
             if (joueur instanceof JoueurHumain) {
                 Serie serieAChoisir = interfaceUtilisateur.choisirSerie((JoueurHumain) joueur, table);
                 joueur.ramasserSerie(serieAChoisir.ramasserCartes());
@@ -140,6 +140,7 @@ public class Jeu {
             }
         }
     }
+
     public boolean estTermine() {
         if (deck.isEmpty()) {
             return true;
@@ -152,4 +153,7 @@ public class Jeu {
         return true;
     }
 
+    public List<Serie> getTable() {
+        return table;
+    }
 }
